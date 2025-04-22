@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Library from './chapter_03/Library';
+import Clock from './chapter_04/Clock'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+setInterval(() => {
+  root.render(
+    <React.StrictMode>
+      <Clock />
+    </React.StrictMode>
+  );
+}, 1000);
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Library />
   </React.StrictMode>
 );
 
