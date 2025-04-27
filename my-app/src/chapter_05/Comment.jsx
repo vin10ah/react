@@ -43,10 +43,8 @@ function Comment(props) {
             </div>
         
             <div style={styles.contentContainer}>
-                <span style={styles.nameText}>seobin</span>
-                <span style={styles.commentText}>
-                    first component
-                </span>
+                <span style={styles.nameText}>{props.name}</span>
+                <span style={styles.commentText}>{props.comment}</span>
             </div>
         </div>     
     );
